@@ -50,7 +50,6 @@ table {
 
 
 
-
 /* Start of Custom Styles */
 
 ::-webkit-scrollbar {
@@ -58,18 +57,37 @@ table {
 }
 
 
-html {
-	 font-family: "Gill Sans", Gill Sans, sans-serif;
-	 letter-spacing: 0.01rem;
-	 font-size: 16px;
+html,
+body {
+	height:100%;
 }
 
 body {
-	background-image: url(css-images/backgroundEmpty.png);
-	**background-size: 100%, 100%;**
-	background-repeat: no-repeat;
-	position: fixed;
+	margin: 0;
+	padding: 0;
+	font-family: "Gill Sans", Gill Sans, sans-serif;
+	letter-spacing: 0.01rem;
+	font-size: 16px;
 
+}
+
+.home-container,
+.home-container:after {
+	position: fixed;
+	width: 100%;
+	bottom:0;
+	top:0;
+	left:0;
+	z-index: 0;
+
+}
+
+.home-container:after {
+	content: '';
+	background-image: url(css-images/backgroundEmpty.png);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:50% 50%;
 }
 
 
@@ -78,17 +96,26 @@ body {
 	position: fixed;
 	z-index: 9999;
 	width:100%;
+	height: 112px;
 }
 
 #nav-content {
 	display: -webkit-flex;
 	padding-left: 3.125%;
 	padding-right: 3.125%;
+	height:inherit;
+}
+
+#logo-holder {
+	flex-grow: 1;
 }
 
 #nav-logo {
-	padding-top: 0.84375rem;
-	width: 7.5em;
+	width: 120px;
+	position: relative;
+	bottom: 0px;
+	transform: translateY(-50%);
+
 }
 
 #nav-logo:hover {
@@ -96,8 +123,8 @@ body {
 }
 
 #search-holder {
-	padding-left: 3.125rem;
-	padding-right: 30.844rem;
+	float: right;
+	padding-right: 3.125%;
 	width: 18.75rem
 }
 
