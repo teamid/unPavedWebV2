@@ -1,15 +1,42 @@
 $(document).ready(function() {
 	var window_height = $(window).height();
 	var window_width = $(window).width(); 
-	// $("#top-nav").height(window_height*0.0837 +"px");
 
 	var nav_height = $("#top-nav").height();
 
-	$("#nav-logo").css({
-		"top" : (nav_height/2.0) +"px"
+	$(".home-container").css({
+		"top" : (nav_height) +"px"
 	});
 
-		
+	//CENTER NAV LOGO
+	$("#nav-logo").css({
+		"top" : (nav_height*0.5) +"px"
+	});
+
+	//SET Y-POSITION OF SEARCH BAR
+	$("#search-form").css({
+		"top" : (nav_height*0.5) +"px"
+	});
+
+	//SET Y-POSITION OF USER THUMBNAIL
+	$("#user-thumbnail").css({
+		"top" : (nav_height*0.5) +"px"
+	});
+
+	//SET Y-POSITION OF USER NAME
+	$("#user-name").css({
+		"top" : (nav_height*0.5) +"px"
+	});
+
+	//SET Y-POSITION OF NAV ICONS
+	$(".nav-icon-container > img").css({
+		"top" : (nav_height*0.5) +"px"
+	});
+
+	//SET Y-POSITION OF SETTINGS ICON
+	$("#settings-icon").css({
+		"top" : (nav_height*0.203) +"px"
+	});
 
 	$("#user-posts").height(window_height);
 
@@ -29,9 +56,6 @@ $(document).ready(function() {
 
 
 
-
-
-	$("#nav-content").width(window_width)
 
 
 
