@@ -163,7 +163,7 @@ body {
 }
 
 #user-thumbnail{
-	width:1.875rem;
+	width:2rem;
 	position: relative;
 	transform: translateY(-50%);
 	color:white;
