@@ -4,9 +4,16 @@ $(document).ready(function() {
 
 	var nav_height = $("#top-nav").height();
 
-	$(".home-container").css({
+
+	$("#home-container").css({
 		"top" : (nav_height) +"px"
 	});
+
+	$("#sidebar").css({
+		"top" : (nav_height) +"px"
+	});
+
+	$("#sidebar").height(window_height - nav_height)
 
 	//CENTER NAV LOGO
 	$("#nav-logo").css({
@@ -48,16 +55,24 @@ $(document).ready(function() {
 		$("#helena-location, .gradient, #location-icon").fadeOut(600);
 	});
 
+	var $container = $("#post-container");
+
+	// init
+	$container.isotope({
+  	// options
+  	itemSelector: ".postbox",
+  	layoutMode: 'masonry'
+	});
+
+
+
+
+
+	
+	});
 
 
 
 
 
 
-
-
-
-
-
-
-})
