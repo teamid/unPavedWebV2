@@ -68,6 +68,7 @@ body {
 	font-family: "Gill Sans", Gill Sans, sans-serif;
 	letter-spacing: 0.01rem;
 	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
 }
 
 .home-container,
@@ -135,6 +136,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: 1.15625rem;
 	font-family: "Gill Sans MT", Gill Sans, sans-serif;
+	-webkit-font-smoothing: antialiased;
 	width:inherit;
 	height: 1.6875rem;
 	border-radius: 10rem;
@@ -231,7 +233,6 @@ body {
 #sidebar {
 	position: fixed;
 	background-color: white;
-	
 	right:0;
 	width: 16.015%;
 	z-index: 1;
@@ -243,6 +244,7 @@ body {
 
 #post-container {
 	width: 83.985%;
+	height:100%;
 	overflow-y: auto;
 	z-index: 2;
 }
