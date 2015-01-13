@@ -228,6 +228,14 @@ body {
 }
 
 
+#stars {
+	position: relative;
+	width: 100%
+	z-index: 10000;
+
+}
+
+
 /* SIDEBAR */
 
 #sidebar {
@@ -259,6 +267,7 @@ body {
 /* PROFILE PAGE STYLING */
 
 #user-container {
+	
 	background-color: #fff;
 	border-radius: 5px;
 	width: 100%;

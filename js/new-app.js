@@ -5,6 +5,9 @@ $(document).ready(function() {
 	var nav_height = $("#top-nav").height();
 
 
+
+
+
 	$("#home-container").css({
 		"top" : (nav_height) +"px"
 	});
@@ -18,6 +21,11 @@ $(document).ready(function() {
 	});
 
 	$("#sidebar").height(window_height - nav_height)
+
+	$("#stars").css({
+		"height" : (window_height*0.0836879) + "px",
+		"top" : "-" + nav_height + "px"
+	})
 
 
 
