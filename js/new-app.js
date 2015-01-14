@@ -4,8 +4,11 @@ $(document).ready(function() {
 
 	var nav_height = $("#top-nav").height();
 
+	var user_face_width = window_width*0.09765625
 
-
+	$("#profile-header").css({
+		"font-size" : (window_width*0.00625*2) +"px"
+	})
 
 
 	$("#home-container").css({
@@ -26,50 +29,6 @@ $(document).ready(function() {
 		"height" : (window_height*0.0836879) + "px",
 		"top" : "-" + nav_height + "px"
 	})
-
-
-
-	//CENTER USER CONTAINER
-
-	$("#user-container").css({
-		"width" : (window_width*0.93906) +"px",
-		"left" : (window_width*0.5) +"px",
-		"top" : (window_width*0.01875 + nav_height) +"px"
-	});
-
-
-/*
-	$("#user-photos-list > li > img").css({
-		"width" : (window_width*0.93906*0.1859375) +"px",
-		"height" : (window_width*0.93906*0.1859375) +"px"
-	});
-*/
-
-	/*
-	$("#user-photos-list").css({
-		"height" : (window_width*0.93906*0.20) +"px"
-	});
-
-	$("#first-photo, #second-photo").css({
-		"width" : (window_width*0.93906*0.20) +"px"
-	});
-*/ 
-	var user_face_width = window_width*0.09765625
-
-
-
-	$("#user-face").css({
-		"width" : user_face_width +"px",
-		"height" : user_face_width +"px",
-		"top" : "-" + (window_width*0.10546875*0.5 + 4) +"px",
-	
-	});
-
-
-
-
-
-
 
 	//CENTER NAV LOGO
 	$("#nav-logo").css({
@@ -111,6 +70,44 @@ $(document).ready(function() {
 		$("#helena-location, .gradient, #location-icon").fadeOut(600);
 	});
 
+
+
+
+
+
+
+	// MARK -- PROFILE.HTML SETUP
+
+	//CENTER USER FACE ON PROFILE
+	$("#user-face").css({
+		"width" : user_face_width +"px",
+		"height" : user_face_width +"px",
+		"top" : "-" + (window_width*0.10546875*0.5 + 4) +"px",
+	
+	});
+
+	$("#profile-picture").css({
+		"height" : (user_face_width*0.5 - 7) +"px"
+	})
+
+	$("#button-container > .friends").hover(function() {
+		$("#profile-friends, #profile-friends > div").fadeTo(0.8);
+	}, function() {
+		$("#profile-friends, #profile-friends > div").fadeTo(1.0);
+	});
+
+
+
+
+
+
+
+	$("#stats-divider").css({
+		"height" : (window_width*0.00078125) +"px"
+	})
+
+
+	//ISOTOPE
 	var $container = $("#post-container");
 
 	// init
