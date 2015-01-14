@@ -270,20 +270,6 @@ body {
 /* USER POSTS */
 
 
-#post-container {
-	width: 83.985%;
-	height:100%;
-	overflow-y: auto;
-	z-index: 2;
-}
-
-.postbox {
-	width: 37.89065%;
-	height: 37.89065%; ;
-	background-color: white;
-}
-
-
 /* PROFILE PAGE STYLING */
 
 #user-container {
@@ -471,6 +457,9 @@ body {
 	opacity: 0.35;
 }
 
+
+/* MARK - Country List Styles */
+
 #user-countries-list {
 	position: relative;
 	margin-top: 0.1875em;
@@ -488,6 +477,36 @@ body {
 	width: 23.6253em;
 	height: 14.375em;
 }
+
+.location-container > .image-container {
+	position: relative;
+	border-radius: 5px;
+	width:: inherit;
+	height: 95.56217%;
+	margin-left: 0.3125em;
+	margin-right: 0.3125em;
+	margin-top: 0.3125em;
+	margin-bottom: 0.3125em;
+	background-color: red;
+	overflow: hidden;
+}
+
+.big {
+	position: absolute;
+	height: 100%;
+	right: 9.25em;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 #user-cities-list {
 	position: relative;
