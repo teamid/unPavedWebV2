@@ -292,7 +292,7 @@ body {
 	background-color: #fff;
 	border-radius: 5px;
 	width: 93.906%;
-	height: 200%;
+	height: 500%;
 	z-index: 2;
 	position: relative;
 	top: 5.1875rem;
@@ -522,8 +522,8 @@ body {
 	margin-right: 0.53125em;
 	border-radius: 10px;
 	background-color: #fff;
-	width: 23.6253em;
-	height: 14.375em;
+	width: 35.65625em;
+	height: 22em;
 }
 
 #user-friends-list {
@@ -540,8 +540,8 @@ body {
 	margin-right: 0.53125em;
 	border-radius: 10px;
 	background-color: #fff;
-	width: 23.6253em;
-	height: 14.375em;
+	width: 13.625em;
+	height: 13.625em;
 }
 
 #user-stamps-list {
@@ -558,8 +558,8 @@ body {
 	margin-right: 0.53125em;
 	border-radius: 10px;
 	background-color: #fff;
-	width: 23.6253em;
-	height: 14.375em;
+	width: 9.375em;
+	height: 9.375em;
 }
 
 
@@ -585,6 +585,7 @@ body {
 	width: inherit;
 	display: block;
 	overflow: auto;
+	padding-bottom: 200em;
 }
 
 
