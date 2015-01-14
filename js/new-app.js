@@ -90,21 +90,49 @@ $(document).ready(function() {
 		"height" : (user_face_width*0.5 - 7) +"px"
 	})
 
-	$("#button-container > .friends").hover(function() {
-		$("#profile-friends, #profile-friends > div").fadeTo(0.8);
-	}, function() {
-		$("#profile-friends, #profile-friends > div").fadeTo(1.0);
+
+	$("#stats-divider").css({
+		"height" : (window_width*0.00078125) +"px"
+	})
+
+
+	//HIDE CONTENTS OF PROFILE
+	$("#user-cities-list").hide();
+
+
+
+
+
+
+
+	// STATS MENU FUNCTIONS
+
+	//	CLICK: Countries
+
+		$( "#countries" ).click(function() {
+
+			$("#user-countries-list").show("slow");
+		});
+
+
+
+	//	CLICK: Cities
+
+	$( "#cities" ).click(function() {
+  		$("#user-countries-list").hide("slow");
+  		$("#user-cities-list").show("slow")
+  		$("#stats-list > li#countries > h4, #stats-list > li#countries > h5").css({
+  			"color" : "#333333"
+  		})
+  		$("#stats-list > li#cities > h4, #stats-list > li#cities > h5").css({
+  			"color" : "#3583b3"
+  		})
 	});
 
 
 
 
 
-
-
-	$("#stats-divider").css({
-		"height" : (window_width*0.00078125) +"px"
-	})
 
 
 	//ISOTOPE
