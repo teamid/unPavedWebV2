@@ -96,26 +96,50 @@ $(document).ready(function() {
 	})
 
 
-	//HIDE CONTENTS OF PROFILE
-	$("#user-cities-list").hide();
-
-
-
 
 
 
 
 	// STATS MENU FUNCTIONS
 
-	//	CLICK: Countries
 
-		$( "#countries" ).click(function() {
+	//HIDE MENU OPTIONS ON DOCUMENT LOAD
+	$("#user-cities-list").hide();
+	$("#user-footprints-list").hide();
+	$("#user-friends-list").hide();
+	$("#user-stamps-list").hide();
 
-			$("#user-countries-list").show("slow");
+	// STATS MENU FUNCTIONS
+
+
+	$("#stats-list > li").click(function() {
+		var $this = $(this),
+			string = $this.attr("id"),
+			elementString = "#"+string,
+			listString = "#user-"+string+"-list";
+
+			$("#user-content-container > ul").hide("slow");
+
+			$("#stats-list > li > h4, #stats-list > li > h5 ").css({
+  			"color" : "#333333"
+  			})
+
+
+			$("#stats-list > li"+elementString+" > h4, #stats-list > li"+elementString+" > h5").css({
+  			"color" : "#3583b3"
+  			})
+			
+			$("#user-content-container > ul").hide("slow");
+			$(listString).show("slow");
+			//$(clicked).show("slow");
+
+			
+			
+			//Show 
+			//$(string).show("slow")
 		});
 
-
-
+/*
 	//	CLICK: Cities
 
 	$( "#cities" ).click(function() {
@@ -131,7 +155,7 @@ $(document).ready(function() {
 
 
 
-
+*/
 
 
 
@@ -147,10 +171,25 @@ $(document).ready(function() {
 
 
 
-
-
 	
 	});
+
+
+//	CLICK: Cities
+
+		$("#stats-list > li").click(function() {
+			// var string = $("#user-"+clicked+"-list");
+			var clicked = this;
+			// Hide all possible options
+			$("#user-content-container > ul").hide("slow");
+			$(clicked).show("slow");
+
+			
+			
+			//Show 
+			//$(string).show("slow")
+		});
+
 
 
 

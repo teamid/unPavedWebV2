@@ -243,6 +243,10 @@ body {
 }
 
 
+#stars-container {
+	pointer-events: none;
+}
+
 #stars {
 	position: relative;
 	width: 100%
@@ -485,7 +489,6 @@ body {
 	height: 14.375em;
 }
 
-
 #user-cities-list {
 	position: relative;
 	margin-top: 0.1875em;
@@ -495,6 +498,61 @@ body {
 }
 
 #user-cities-list > li {
+	margin-top: 1.0625em;
+	margin-left: 0.53125em;
+	margin-right: 0.53125em;
+	border-radius: 10px;
+	background-color: #fff;
+	width: 23.6253em;
+	height: 14.375em;
+}
+
+
+#user-footprints-list {
+	position: relative;
+	margin-top: 0.1875em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#user-footprints-list > li {
+	margin-top: 1.0625em;
+	margin-left: 0.53125em;
+	margin-right: 0.53125em;
+	border-radius: 10px;
+	background-color: #fff;
+	width: 23.6253em;
+	height: 14.375em;
+}
+
+#user-friends-list {
+	position: relative;
+	margin-top: 0.1875em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#user-friends-list > li {
+	margin-top: 1.0625em;
+	margin-left: 0.53125em;
+	margin-right: 0.53125em;
+	border-radius: 10px;
+	background-color: #fff;
+	width: 23.6253em;
+	height: 14.375em;
+}
+
+#user-stamps-list {
+	position: relative;
+	margin-top: 0.1875em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#user-stamps-list > li {
 	margin-top: 1.0625em;
 	margin-left: 0.53125em;
 	margin-right: 0.53125em;
