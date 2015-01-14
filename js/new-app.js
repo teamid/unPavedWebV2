@@ -171,24 +171,10 @@ $(document).ready(function() {
 
 
 
+
 	
 	});
 
-
-//	CLICK: Cities
-
-		$("#stats-list > li").click(function() {
-			// var string = $("#user-"+clicked+"-list");
-			var clicked = this;
-			// Hide all possible options
-			$("#user-content-container > ul").hide("slow");
-			$(clicked).show("slow");
-
-			
-			
-			//Show 
-			//$(string).show("slow")
-		});
 
 
 
