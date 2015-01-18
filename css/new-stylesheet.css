@@ -733,7 +733,10 @@ body {
 
 /* MARK - Country List Styles */
 
-#place-there-now-list {
+
+
+
+.place-user-list {
 	position: relative;
 	margin-top: 0.1875em;
 	display: flex;
@@ -741,7 +744,7 @@ body {
 	justify-content: center;
 }
 
-#place-there-now-list > li {
+.place-user-list > li {
 	margin-top: 1.0625em;
 	margin-left: 0.53125em;
 	margin-right: 0.53125em;
@@ -751,53 +754,109 @@ body {
 	height: 14.375em;
 }
 
-.location-container > .image-container {
-	position: relative;
+
+.place-user-list > .user-container > .list-user-name {
+	color: #333333;
+	padding-left: 0.9375rem;
+	padding-top: 0.6rem;
+	font-weight: 600;
+	font-size: 118%;
+}
+
+.place-user-list > .user-container > .list-user-name:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.place-user-list > .user-container > .list-user-name:active {
+	opacity: 0.4;
+}
+
+
+.place-user-list > .user-container > .list-user-stats {
+	color: #333333;
+	padding-left: 0.9575rem;
+	padding-top: 0.2375rem;
+	font-size: 100%;
+
+}
+
+.place-user-list > .user-container > .list-user-stats > img {
+	width: 3px;
+	padding-left: 0.3rem;
+	padding-bottom: 0.22rem;
+}
+
+
+.place-user-list > .user-container > .image-container {
+	display: flex;
+	padding-top: 0.5625rem;
+	justify-content:center;
+}
+
+.place-user-list > .user-container > .image-container > .user-profile-picture {
+	width: 10rem;
+	height:10rem;
+	margin-right: 0.09375rem;
+	margin-left: 0;
+	padding-left: 0.0625rem;
 	border-radius: 5px;
-	width:: inherit;
-	height: 95.56217%;
-	margin-left: 0.3125em;
-	margin-right: 0.3125em;
-	margin-top: 0.3125em;
-	margin-bottom: 0.3125em;
-	background-color: transparent;
 	overflow: hidden;
 }
 
-.big {
-	position: absolute;
-	height: 100%;
-	right: 9.25em;
-}
 
-
-
-
-
-
-
-
-
-
-
-
-#place-have-been-list {
-	position: relative;
-	margin-top: 0.1875em;
+.place-user-list > .user-container > .image-container > .thumb-container {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	flex-flow: wrap;
+	width: 12.125rem;
+	height: 10rem;
+	padding-left: 0;
+	
 }
 
-#place-have-been-list > li {
-	margin-top: 1.0625em;
-	margin-left: 0.53125em;
-	margin-right: 0.53125em;
-	border-radius: 10px;
-	background-color: #fff;
-	width: 23.6253em;
-	height: 14.375em;
+.place-user-list > .user-container > .image-container > .thumb-container > .user-thumb {
+
+	width: 5.875rem;
+	height: 4.90625rem;
+	margin-left: 0.09375rem;
+	margin-right: 0.09375rem;
+	margin-bottom: 0.1875rem;
+	border-radius: 5px;
+	overflow: hidden;
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #place-footprints-list {
