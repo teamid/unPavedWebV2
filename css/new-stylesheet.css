@@ -581,25 +581,289 @@ body {
 	height: 9.375em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .profile-content-container {
+	background-color: #ebebeb;
+	width: inherit;
+	display: block;
+	overflow: auto;
+	padding-bottom: 200em;
+}
+
+
+
+
+
+
+/* CITY PROFILE STYLES */
+
+
+#place-picture {
+	display: flex;
+	justify-content: center;
+	
+}
+
+
+#place-header > h1 {
+	color: #333333;
+	padding-top: 2.2%;
+	font-weight: 600;
+	font-size: 200%;
+	text-align: center;
+}
+
+#place-header > h3 {
+	color: #333333;
+	padding-top: 0.6125rem;
+	font-size: 110%;
+	text-align: center;
+}
+
+
+#place-face {
+	position: relative;
+	border-width: 5px;
+	border-style: solid;
+	border-radius: 10px;
+	border-color: white;
+}
+
+
+
+
+
+#button-container {
+	padding-top: 1.5375em;
+	display: flex;
+	justify-content: center;
+}
+
+
+.been {
+	background-color: #82be00;
+	border-radius: 4em;
+	width: 7.1875em;
+	height: 1.6875em;
+}
+
+.been > div {
+	color:white;
+	text-align: center;
+	position: relative;
+	transform: translateY(-50%);
+	top:48%;
+}
+
+.been:hover {
+	cursor: pointer;
+	background-color: #8BCB00;
+}
+
+.been:active, .been > div:active {
+	opacity: 0.7;
+}
+
+#separator {
+	width: 1.0625em;
+}
+
+.question {
+	background-color: #4aaedd;
+	border-radius: 4em;
+	width: 7.1875em;
+	height: 1.6875em;
+}
+
+.question > div {
+	color:white;
+	text-align: center;
+	position: relative;
+	transform: translateY(-50%);
+	top:48%;
+}
+
+.question:hover {
+	cursor: pointer;
+	background-color: #70C1E8;
+}
+
+.question:active, .question > div:active {
+	opacity: 0.7;
+}
+
+
+#place-stats-list {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+#place-stats-list > li {
+	width:7.1875em;
+}
+
+#place-stats-list > li > h4 {
+	color: #333333;
+	font-weight: 600;
+}
+
+#place-stats-list > li > h5 {
+	color: #333333;
+	font-size: 84%;
+}
+
+#place-stats-list > li#there-now > h4, #place-stats-list > li#there-now > h5 {
+	color: #3583b3;
+}
+
+
+#place-stats-list > li:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+#place-stats-list > li:active {
+	cursor: pointer;
+	opacity: 0.35;
+}
+
+
+
+/* MARK - Country List Styles */
+
+#place-there-now-list {
+	position: relative;
+	margin-top: 0.1875em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#place-there-now-list > li {
+	margin-top: 1.0625em;
+	margin-left: 0.53125em;
+	margin-right: 0.53125em;
+	border-radius: 10px;
+	background-color: #fff;
+	width: 23.6253em;
+	height: 14.375em;
+}
+
+.location-container > .image-container {
+	position: relative;
+	border-radius: 5px;
+	width:: inherit;
+	height: 95.56217%;
+	margin-left: 0.3125em;
+	margin-right: 0.3125em;
+	margin-top: 0.3125em;
+	margin-bottom: 0.3125em;
+	background-color: transparent;
+	overflow: hidden;
+}
+
+.big {
+	position: absolute;
+	height: 100%;
+	right: 9.25em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#place-have-been-list {
+	position: relative;
+	margin-top: 0.1875em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#place-have-been-list > li {
+	margin-top: 1.0625em;
+	margin-left: 0.53125em;
+	margin-right: 0.53125em;
+	border-radius: 10px;
+	background-color: #fff;
+	width: 23.6253em;
+	height: 14.375em;
+}
+
+
+#place-footprints-list {
+	position: relative;
+	margin-top: 0.1875em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#place-footprints-list > li {
+	margin-top: 1.0625em;
+	margin-left: 0.53125em;
+	margin-right: 0.53125em;
+	border-radius: 10px;
+	background-color: #fff;
+	width: 35.65625em;
+	height: 22em;
+}
+
+#place-venues-list {
+	position: relative;
+	margin-top: 0.1875em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#place-venues-list > li {
+	margin-top: 1.0625em;
+	margin-left: 0.53125em;
+	margin-right: 0.53125em;
+	border-radius: 10px;
+	background-color: #fff;
+	width: 13.625em;
+	height: 13.625em;
+}
+
+#place-questions-list {
+	position: relative;
+	margin-top: 0.1875em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#place-questions-list > li {
+	margin-top: 1.0625em;
+	margin-left: 0.53125em;
+	margin-right: 0.53125em;
+	border-radius: 10px;
+	background-color: #fff;
+	width: 9.375em;
+	height: 9.375em;
+}
+
+
+
+
+
+
+
+
+
+
+.place-content-container {
 	background-color: #ebebeb;
 	width: inherit;
 	display: block;

@@ -79,6 +79,25 @@ $(document).ready(function() {
 	// MARK -- PROFILE.HTML SETUP
 
 	//CENTER USER FACE ON PROFILE
+	$("#place-face").css({
+		"width" : user_face_width +"px",
+		"height" : user_face_width +"px",
+		"top" : "-" + (window_width*0.10546875*0.5 + 4) +"px",
+	
+	});
+
+	$("#place-picture").css({
+		"height" : (user_face_width*0.5 - 7) +"px"
+	})
+
+
+	$("#stats-divider").css({
+		"height" : (window_width*0.00078125) +"px"
+	})
+
+
+
+		//CENTER THUMBNAIL ON PLACE PROFILE
 	$("#user-face").css({
 		"width" : user_face_width +"px",
 		"height" : user_face_width +"px",
@@ -100,7 +119,7 @@ $(document).ready(function() {
 
 
 
-	// STATS MENU FUNCTIONS
+	// PROFILE STATS MENU FUNCTIONS
 
 
 	//HIDE MENU OPTIONS ON DOCUMENT LOAD
@@ -131,31 +150,53 @@ $(document).ready(function() {
 			
 			$("#user-content-container > ul").hide("slow");
 			$(listString).show("slow");
-			//$(clicked).show("slow");
+			
 
 			
-			
-			//Show 
-			//$(string).show("slow")
+	
 		});
 
-/*
-	//	CLICK: Cities
 
-	$( "#cities" ).click(function() {
-  		$("#user-countries-list").hide("slow");
-  		$("#user-cities-list").show("slow")
-  		$("#stats-list > li#countries > h4, #stats-list > li#countries > h5").css({
+
+
+	// PLACE STATS MENU FUNCTIONS
+
+
+	//HIDE MENU OPTIONS ON DOCUMENT LOAD
+	$("#place-have-been-list").hide();
+	$("#place-footprints-list").hide();
+	$("#place-venues-list").hide();
+	$("#place-questions-list").hide();
+
+	// STATS MENU FUNCTIONS
+
+
+	$("#place-stats-list > li").click(function() {
+		var $this = $(this),
+			string = $this.attr("id"),
+			elementString = "#"+string,
+			listString = "#place-"+string+"-list";
+
+			$("#user-content-container > ul").hide("slow");
+
+			$("#place-stats-list > li > h4, #place-stats-list > li > h5 ").css({
   			"color" : "#333333"
-  		})
-  		$("#stats-list > li#cities > h4, #stats-list > li#cities > h5").css({
+  			})
+
+
+			$("#place-stats-list > li"+elementString+" > h4, #place-stats-list > li"+elementString+" > h5").css({
   			"color" : "#3583b3"
-  		})
-	});
+  			})
+			
+			$("#place-content-container > ul").hide("slow");
+			$(listString).show("slow");
+			
+
+			
+	
+		});
 
 
-
-*/
 
 
 
